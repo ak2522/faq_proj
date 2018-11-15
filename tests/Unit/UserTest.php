@@ -13,7 +13,7 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testProfile()
+    public function testSave()
     {
         $user =factory(\App\User:: class)->make();
         $this->assertTrue($user->save());
@@ -22,5 +22,10 @@ class UserTest extends TestCase
     {
         $user =factory(\App\User:: class)->make();
         $this->assertTrue(is_object($user->questions()->get()));
+    }
+    public function testProfile()
+    {
+        $user =factory(\App\User:: class)->make();
+        $this->assertTrue(is_object($user->profile()->get()));
     }
 }
