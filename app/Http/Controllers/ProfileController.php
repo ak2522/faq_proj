@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Profile;
 
 class ProfileController extends Controller
 {
@@ -24,8 +25,11 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        $profile = new Profile();
+        $edit = FALSE;
+        return view('profileForm', ['profile' => $profile,'edit' => $edit  ]);
     }
+
 
     /**
      * Store a newly created resource in storage.
