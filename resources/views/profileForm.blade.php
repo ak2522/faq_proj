@@ -7,6 +7,8 @@
                 <div class="card">
                     <div class="card-header">My Profile</div>
                     <div class="card-body">
+                                <h2>{{ Auth::user()->name }}</h2>
+
                         @if($edit === FALSE)
                             {!! Form::model($profile, ['route' => ['profile.store', Auth::user()->id], 'method' => 'post']) !!}
                         @else()
@@ -27,6 +29,7 @@
                         <button class="btn btn-success float-right" value="submit" type="submit" id="submit">Save
                         </button>
                         {!! Form::close() !!}
+
                     </div>
 
                 </div>
