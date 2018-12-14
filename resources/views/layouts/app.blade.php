@@ -89,8 +89,13 @@
             </div>
         </div>
     </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-    <main class="py-4">
+    
+
+
+        <main class="py-4">
         <div class="col-12">
             @include('flash.error')
             @include('flash.messages')
