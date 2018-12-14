@@ -1,7 +1,7 @@
 # IS_601_FAQ_PROJECT_FINAL
 <h1> Introduction of HoneyPot(Google ReCaptcha)</h1>
 <p> Honeypot or ReCaptcha is a service that prevents your site from spam and abuse</p>
-<p> It verifies that the computer user is human and not a robot </p>
+<p> ReCaptcha verifies that the computer user is human and not a robot. It is a type of challenge-response test to determine whether the user is human or not </p>
 
 <h2> User_Story_1: Installation for Google ReCaptcha</h2>
 <p> Install composer. Write in the terminal composer require google/recaptcha "~1.1" </p>
@@ -33,7 +33,7 @@
 
 <h2> User_Story_5: Feature and Unit Tests </h2>
 <p> Create a Feature Test to get the register page url with a status 200 </p>
-<p> Create a unit Test to verify the Google Recaptcha </p>
+<p> Create a Unit Test to verify the Google Recaptcha </p>
 <p> Run phpunit for tests and assertions </p>
 
 <h2> User_Story_6: Heroku Deploy </h2>
