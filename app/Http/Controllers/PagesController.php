@@ -13,7 +13,7 @@ class PagesController extends Controller
             $client = new Client();
             $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
                 'form_params' => array(
-                    'secret'    => '',
+                    'secret'    => '6LcmYoEUAAAAAD5UY8ANLnVBdkJcWP6nhK36yfAc',
                     'response'  => $token
                 )
             ]);
