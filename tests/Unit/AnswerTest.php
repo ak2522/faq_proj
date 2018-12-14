@@ -13,7 +13,7 @@ class AnswerTest extends TestCase
      *
      * @return void
      */
-    public function testSave()
+    public function testAnswers()
     {
        $user = $user = factory(\App\User::class)-> make();
        $user->save();

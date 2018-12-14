@@ -13,7 +13,7 @@ class ProfileTest extends TestCase
      *
      * @return void
      */
-    public function testSave()
+    public function testProfile()
     {
         $user = factory(\App\User::class)->make();
         $user->save();
